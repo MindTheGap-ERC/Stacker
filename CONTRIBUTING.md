@@ -17,7 +17,7 @@ When contributing to this codebase, please adhere to the code of conduct INSERT 
 
 ### Reporting bugs {#reporting-bugs}
 
-Suspect or found a bug? To report it, use the GitHub issues [INSERT LINK], and tag your issue with the "bug" label. Please describe the bug in as much detail as you can, including (1) a description of the unexpected behavior you observed (2) what behavior you expected and (3) (if possible) a minimum running example. The more detailed your bug report is, the easier it is for us to fix, and the faster we will be able to fix it.
+Suspect or found a bug? To report it, use the GitHub issues https://github.com/MindTheGap-ERC/Stacker/issues, and tag your issue with the "bug" label. Please describe the bug in as much detail as you can, including (1) a description of the unexpected behavior you observed (2) what behavior you expected and (3) (if possible) a minimum running example. The more detailed your bug report is, the easier it is for us to fix, and the faster we will be able to fix it.
 
 ### Request features or enhancements
 
@@ -32,10 +32,6 @@ Do you think the documentation is lacking? We're always happy to improve! If you
 Would you like to contribute a new feature to the code base, or improve existing code? Then fork the repository, add your features, and submit a pull request using the "enhancement" label. We will decide on a case-by-case basis if the pull request is accepted or not. This will be discussed with all active authors and contributers to the code base. Criteria for inclusion of new code are code quality, clarity and utility of the features, and whether the new feature enhances the original idea of the code base. If you are unsure if your feature would fit into the codebase, please use GitHub issues to discuss your idea (using the "enhancement" label) so we can give you feedback.
 
 While this is not a criterion for code inclusion, we strongly encourage that each new feature includes tests that ensure that the feature works as intended and integrates with the existing codebase seamlessly.
-
-### style guide/coding conventions
-
-This codebase follows the INSERT HERE style guide. More details on the style guide can be found here INSERT LINK.
 
 ## Authors and contributors
 
