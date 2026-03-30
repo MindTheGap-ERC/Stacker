@@ -276,7 +276,7 @@
             <ol>
                 <li>Clone or download the Stacker repository</li>
                 <li>Add the Stacker directory to your MATLAB path</li>
-                <li>Ensure all parameter files are in the <code>parameters/</code> subdirectory</li>
+                <li>Ensure all parameter files are in the <code>parameters/</code> subdirectory. Note that the default files are already provided in this directory</li>
                 <li>Verify initial bathymetry and sea-level curve files are accessible</li>
             </ol>
             
@@ -393,7 +393,9 @@ stacker</code></pre>
                     </tr>
                 </tbody>
             </table>
-            
+            <li>Note 1: gridCellsX should equal gridCellsY in the current version</li>
+            <li>Note 2: 'totalEMT should shorter or equals to the lengths of sealevelcurve</li>
+
             <h3>File References</h3>
             <table>
                 <thead>
@@ -416,7 +418,8 @@ stacker</code></pre>
                     </tr>
                 </tbody>
             </table>
-            
+            <li>Note: sea-level curve should be stored in a row instead of a column</li>
+
             <h3>Facies Parameters</h3>
             <p>For each facies, specify:</p>
             <table>
@@ -536,7 +539,9 @@ stacker</code></pre>
                     </tr>
                 </tbody>
             </table>
-            
+            <li>Note 1: please use mosaic elements as input if you choose to use facies mosaic model</li>   
+            <li>Note 2: one facies could have multiple mosaic elements</li> 
+
             <h3>Sediment Production Models</h3>
             <ul>
                 <li><strong>Constant:</strong> Uniform production rate independent of water depth</li>
@@ -553,6 +558,7 @@ stacker</code></pre>
                 <li>Set the parameter filename (default: <code>stackerFaciesMosaic.txt</code>)</li>
                 <li>Click <strong>"Load parameter file"</strong></li>
                 <li>Verify console output confirms successful loading</li>
+
             </ol>
             
             <div class="info">
@@ -560,7 +566,7 @@ stacker</code></pre>
                 <code>Read parameters file for model FaciesMosaic type FaciesMosaic to run for 1000 iterations for 1.00 My with 5 facies on a 100 by 100 cell grid</code>
             </div>
             
-            <h3>Step 2: Initialize Model</h3>
+            <h3>Step 2: Initialise Model</h3>
             <ol>
                 <li>Click <strong>"Initialise model"</strong></li>
                 <li>The model arrays are allocated in memory</li>
@@ -586,8 +592,8 @@ stacker</code></pre>
                     <ul>
                         <li>Final bathymetry and facies distribution</li>
                         <li>Stratigraphic cross-sections</li>
-                        <li>Chronostratigraphic diagrams</li>
-                        <li>Thickness maps</li>
+                        <li>Chronostratigraphic diagrams (five virtual cores)</li>
+                        <li>Migration pathways of each mosaic element in plan view</li>                       
                     </ul>
                 </li>
             </ol>
@@ -620,7 +626,7 @@ parameters/initialTopography.txt  # Initial bathymetry file
 20.0                            # Subsidence rate (m/My)
 parameters/sealevelCurve.txt    # Sea-level curve file
 1.0                             # Tidal range (m)
-5                               # Number of facies
+2                               # Number of facies
 
 # Facies 1
 1                               # Facies code
@@ -641,8 +647,8 @@ Constant                        # Production model
 RandomWalk                      # Migration type
 
 # Mosaic Element 1
-1                               # Element number
-5                               # Facies code
+1                               # Element number (it is possible that more than one mosaic elements correspond to one facies)
+1                               # Facies code
 0.5 0.5                         # Migration rates (km/iteration)
 2.5 2.5                         # Initial position (km)
 2.4                             # Radius (km)
