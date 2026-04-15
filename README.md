@@ -74,11 +74,13 @@ ORCID: [0000-0002-3851-116X](https://orcid.org/0000-0002-3851-116X)
 
 ## Manual 
 
-The manual pages https://mindthegap-erc.github.io/Stacker/ have been generated based on the code using an LLM and reviewed by the author and the maintainers. The latter take responsibility for the contents.
+The manual pages https://mindthegap-erc.github.io/Stacker/ have been generated based on the code using an LLM, reviewed and edited by the author and the maintainers. The latter take responsibility for the contents.
 
 ## Copyright
 
-Copyright 2024-2026 University of Liverpool
+Copyright 2024-2026 University of Liverpool for the software
+
+Copyright 2026 University of Liverpool and Utrecht University for the documentation
 
 ## License
 
